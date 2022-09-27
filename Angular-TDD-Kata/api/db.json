@@ -1,0 +1,84 @@
+{
+  "coffeeList": [
+    {
+      "id": 1,
+      "name": "Black",
+      "ingredients": "just coffee"
+    },
+    {
+      "id": 2,
+      "name": "Latte",
+      "ingredients": "espresso, steamed milk"
+    },
+    {
+      "id": 3,
+      "name": "Cappuccino",
+      "ingredients": "espresso, steamed milk, foam"
+    },
+    {
+      "id": 4,
+      "name": "Americano",
+      "ingredients": "espresso, hot water"
+    },
+    {
+      "id": 5,
+      "name": "Espresso",
+      "ingredients": "1oz espresso"
+    },
+    {
+      "id": 6,
+      "name": "Doppio",
+      "ingredients": "2oz espresso"
+    },
+    {
+      "id": 7,
+      "name": "Cortado",
+      "ingredients": "1oz espresso, 1oz steamed milk"
+    },
+    {
+      "id": 8,
+      "name": "Red Eye",
+      "ingredients": "coffee, espresso"
+    },
+    {
+      "id": 9,
+      "name": "Lungo",
+      "ingredients": "long pulled espresso"
+    },
+    {
+      "id": 10,
+      "name": "Macchiato",
+      "ingredients": "espresso shot, foam"
+    },
+    {
+      "id": 11,
+      "name": "Mocha",
+      "ingredients": "espresso, chocolate, steamed milk"
+    },
+    {
+      "id": 12,
+      "name": "Ristretto",
+      "ingredients": "short pulled espresso"
+    },
+    {
+      "id": 13,
+      "name": "Flat White",
+      "ingredients": "espresso, steamed milk"
+    },
+    {
+      "id": 14,
+      "name": "Affogato",
+      "ingredients": "espresso, ice cream"
+    },
+    {
+      "id": 15,
+      "name": "Cafe Au Lait",
+      "ingredients": "coffee, steamed milk"
+    },
+    {
+      "id": 16,
+      "name": "Irish",
+      "ingredients": "coffee, whiskey, sugar, cream"
+    }
+  ]
+}

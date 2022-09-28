@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { CoffeeDataService } from '../coffee-data.service';
+import { CoffeeDrink } from '../coffeeDrink';
 
 @Component({
   selector: 'app-coffee-list',
@@ -6,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coffee-list.component.css']
 })
 export class CoffeeListComponent implements OnInit {
+  coffeeData$: Observable<CoffeeDrink[]>
 
-  constructor() { }
+  constructor(private coffeeService: CoffeeDataService) { }
 
   ngOnInit(): void {
+    this.coffeeData$ = this.coffeeService.getCoffeeDrinks()
   }
 
 }

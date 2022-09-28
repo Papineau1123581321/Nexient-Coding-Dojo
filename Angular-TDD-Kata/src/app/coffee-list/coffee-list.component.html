@@ -1,1 +1,7 @@
-<p>coffee-list works!</p>
+<h1>A List of Coffee Drinks</h1>
+<table>
+  <!-- Table Headers -->
+  <tr><th>Name</th><th>Description</th></tr>
+  <!-- Table Data -->
+  <tr *ngFor="let drink of coffeeData$ | async" id="drink"><td>{{drink.name}}</td><td>{{drink.description}}</td></tr>
+</table>

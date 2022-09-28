@@ -1,7 +1,11 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
+  let app: AppComponent
+  let fixture: ComponentFixture<AppComponent>;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
@@ -10,15 +14,18 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AppComponent);
+    app = fixture.componentInstance;
+    fixture.detectChanges();
+  })
+
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Angular-TDD-Kata'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('Angular-TDD-Kata');
-  });
+  it('should have a coffe-list component', () => {
+    const componentElement = fixture.debugElement.queryAll(By.css('app-coffee-list'));
+    expect(componentElement.length).toBeGreaterThan(0);
+  })
 });

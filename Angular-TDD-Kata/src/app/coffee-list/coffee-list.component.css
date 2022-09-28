@@ -1,0 +1,8 @@
+table {
+  width: 600px;
+}
+
+table th, td {
+  width: 300px;
+  border: 1px solid rgb(49, 12, 49);
+}

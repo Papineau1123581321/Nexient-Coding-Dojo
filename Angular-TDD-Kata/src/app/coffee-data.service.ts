@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { CoffeeDrink } from './coffeeDrink';
+import { COFFEE_DRINKS } from './MockCoffeeData';
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +9,8 @@ import { Injectable } from '@angular/core';
 export class CoffeeDataService {
 
   constructor() { }
+
+  getCoffeeDrinks(): Observable<CoffeeDrink[]> {
+    return of(COFFEE_DRINKS);
+  }
 }
